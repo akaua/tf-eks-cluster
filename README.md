@@ -44,4 +44,14 @@ $ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | g
 ```
 #### Copie o token no final do output e cole na interface do dashboard
 
+### Configurando uma aplicação de exemplo
+```sh
+$ kubectl apply -f app/
+```
+#### Espere a configuração do NLB finalizar a url provisionada
+```sh
+$ kubectl get services
+```
+
+
 
