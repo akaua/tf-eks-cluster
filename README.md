@@ -34,6 +34,8 @@ $ kubectl apply -f bin/dashboard/
 ```sh
 $ kubectl proxy
 ```
+#### Acesse:
+- http://127.0.0.1:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 ### Configurando autenticação para dashboard
 ```sh
 $ kubectl apply -f bin/auth_dashboard/
@@ -48,7 +50,7 @@ $ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | g
 ```sh
 $ kubectl apply -f app/
 ```
-#### Espere a configuração do NLB finalizar a url provisionada
+#### Espere a configuração do NLB finalizar e copie e cole no browser a url provisionada
 ```sh
 $ kubectl get services
 ```
